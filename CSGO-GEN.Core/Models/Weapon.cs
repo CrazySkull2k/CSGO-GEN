@@ -47,6 +47,10 @@ namespace CSGO_GEN.Core.Models
         {
             StringBuilder sb = new();
             sb.Append($"!skin {gen_id} {pattern} {@float.ToString("0.00000000000000", CultureInfo.InvariantCulture)}");
+            if (IsKnife == true)
+                {
+                    sb.Append($"{weapon_id}");
+                }
 
             int max_size = stickers.Count > StickerSlotsAmount ? StickerSlotsAmount : stickers.Count;
 
@@ -60,10 +64,6 @@ namespace CSGO_GEN.Core.Models
                 if (sticker.PosId == currentPos)
                 {
                     sb.Append($" {sticker.gen_id} {sticker.Scratched.ToString("0.00", CultureInfo.InvariantCulture)}");
-                }
-                else if (IsKnife == true)
-                {
-                    sb.Append($"{weapon_id}");
                 }
                 else
                 {
