@@ -49,7 +49,7 @@ namespace CSGO_GEN.Core.Models
             sb.Append($"!skin {gen_id} {pattern} {@float.ToString("0.00000000000000", CultureInfo.InvariantCulture)}");
             if (IsKnife == true)
                 {
-                    sb.Append($"{weapon_id}");
+                    sb.Append($" {weapon_id}");
                 }
 
             int max_size = stickers.Count > StickerSlotsAmount ? StickerSlotsAmount : stickers.Count;
