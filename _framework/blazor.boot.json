@@ -8,7 +8,7 @@
   "resources": {
     "assembly": {
       "CSGO-GEN-WebAssembly.dll": "sha256-vP0YVSRUNL0DDu\/rydLEAFAOLNc4Ju\/QjA6b2zWDNKk=",
-      "CSGO-GEN.Core.dll": "sha256-izvQ0thm9LtVflmT7hcDthv9p7pUgdkysmCt+guMKkg=",
+      "CSGO-GEN.Core.dll": "sha256-XQa9eLPzU\/\/HPel3zBUHeAGeQOogbKFngdYXjmYB6dI=",
       "Google.Protobuf.dll": "sha256-vXzppkFXQAosihKcal3zrERivmx00zCTNK48VnrhURc=",
       "Microsoft.AspNetCore.Components.dll": "sha256-RiYFa2D4HFpvSuI1rGAQ6\/CPfh5awqOTZsKIN+vHAE4=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-V9\/lhZTksEf7JzWCF27wDEvimpme0Do\/BsExqNedpks=",
