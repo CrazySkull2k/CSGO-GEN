@@ -46,7 +46,7 @@ namespace CSGO_GEN.Core.Models
         public string GetGencode(decimal @float, int pattern, List<AppliedSticker> stickers)
         {
             StringBuilder sb = new();
-            sb.Append($"!skin {gen_id} {pattern} {@float.ToString("0.00000000000000", CultureInfo.InvariantCulture)}{knife_id}");
+            sb.Append($"!skin {gen_id} {pattern} {@float.ToString("0.00000000000000", CultureInfo.InvariantCulture)}");
 
             int max_size = stickers.Count > StickerSlotsAmount ? StickerSlotsAmount : stickers.Count;
 
@@ -56,9 +56,14 @@ namespace CSGO_GEN.Core.Models
             {
                 var sticker = stickers[currentPos];
 
+
                 if (sticker.PosId == currentPos)
                 {
                     sb.Append($" {sticker.gen_id} {sticker.Scratched.ToString("0.00", CultureInfo.InvariantCulture)}");
+                }
+                else if (IsKnife == true)
+                {
+                    sb.Append($"{weapon_id}")
                 }
                 else
                 {
