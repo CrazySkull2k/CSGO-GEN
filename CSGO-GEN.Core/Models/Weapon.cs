@@ -63,7 +63,7 @@ namespace CSGO_GEN.Core.Models
                 }
                 else if (IsKnife == true)
                 {
-                    sb.Append($"{weapon_id}")
+                    sb.Append($"{weapon_id}");
                 }
                 else
                 {
