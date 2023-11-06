@@ -9,8 +9,8 @@ namespace CSGO_GEN_WebAssembly.Pages
 {
     public partial class Index
     {
-        private decimal _float = 0.01m;
-        private int _pattern = 661;
+        private decimal _float = 0.00m;
+        private int _pattern = 0;
 
         public WeaponFilter WeaponFilter { get; set; } = new();
         public StickerFilter StickerFilter { get; set; } = new();
